@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cuentos</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="logos">
+<p>
+     <img class="izq" src="img/ito.png" height="150" width="150"/>
+
+    <img class="der" src="img/webb.png" height="100" width="150"/>
+    <h1 class="titulo"><strong>Cuentos</strong></h1>
+    <h2 class="elaboro">Elaboro: Hernandez Vasquez Rogelio</h2>
+
+
+</p>
+</div>
+
+
+      <div class="centrado">
+
+     <p class="silencio">
+       <a href="silencio/index.html"><strong>Silencio<br></strong></a><br>
+       <img src="img/silencio.jpg" height="200" width="150"/>
+     </p>
+
+     <p class="ganga">
+       <a href="ganga/index.html"><strong>La ganga<br></strong></a><br>
+       <img src="img/ganga.jpeg" height="200" width="150"/>
+     </p>
+
+     <p class="reseñas">
+       <a href="autores/index.html"><strong>Reseñas<br></strong></a><br>
+       <img src="img/autores.jpg" height="200" width="150"/>
+     </p>
+     <p>
+       <h2>Enlaces:</h2>
+       <a href="https://hernandezvasquezrogelio.bitbucket.io"><strong>Bitbucket<br></strong></a><br>
+        <br>
+        <a href="https://hernandezvasquezrogelio.gitlab.io"><strong>Gitlab<br></strong></a><br>
+
+     </p>
+     </div>
+     <div class=fecha>
+     <script >
+
+     var mydate=new Date();
+     var year=mydate.getYear();
+     if (year < 1000)
+     year+=1900;
+     var day=mydate.getDay();
+     var month=mydate.getMonth()+1;
+     if (month<10)
+     month="0"+month;
+     var daym=mydate.getDate();
+     if (daym<10)
+     daym="0"+daym;
+     document.write("<small><font color='30D8E7' face='Arial'><b>"+daym+"/"+month+"/"+year+"</b></font></small>")
+
+     </script>
+     </div>
+     <div class="hora">
+     <span id="liveclock" style="position:absolute;left:0;top:0;"></span><script language="JavaScript" type="text/javascript">
+    <!--
+
+   function show5(){
+   if (!document.layers&&!document.all&&!document.getElementById)
+   return
+
+    var Digital=new Date()
+    var hours=Digital.getHours()
+    var minutes=Digital.getMinutes()
+    var seconds=Digital.getSeconds()
+
+   var dn="PM"
+   if (hours<12)
+   dn="AM"
+   if (hours>12)
+   hours=hours-12
+   if (hours==0)
+   hours=12
+
+    if (minutes<=9)
+    minutes="0"+minutes
+    if (seconds<=9)
+    seconds="0"+seconds
+   //change font size here to your desire
+   myclock="<font size='5' face='Arial' ><b><font size='5'>Hora actual:</font></br>"+hours+":"+minutes+":"
+    +seconds+" "+dn+"</b></font>"
+   if (document.layers){
+   document.layers.liveclock.document.write(myclock)
+   document.layers.liveclock.document.close()
+   }
+   else if (document.all)
+   liveclock.innerHTML=myclock
+   else if (document.getElementById)
+   document.getElementById("liveclock").innerHTML=myclock
+   setTimeout("show5()",1000)
+    }
+
+
+   window.onload=show5
+    //-->
+    </script>
+</div>
+<div class="saludo">
+     <center>
+<span style="font-size: large;"><span class="Apple-style-span" style="color: red;"><script language="JavaScript" type="text/javascript">
+//<![CDATA[
+<!--
+today = new Date()
+if(today.getMinutes() < 10){
+pad = "0"}
+else
+pad = "";
+document.write ;if((today.getHours() >=6) && (today.getHours() <=9)){
+document.write("¡Buen día!")
+}
+if((today.getHours() >=10) && (today.getHours() <=11)){
+document.write("¡Buen día!")
+}
+if((today.getHours() >=12) && (today.getHours() <=19)){
+document.write("¡Buenas tardes!")
+}
+if((today.getHours() >=20) && (today.getHours() <=23)){
+document.write("¡Buenas noches!")
+}
+if((today.getHours() >=0) && (today.getHours() <=3)){
+document.write("¡Buenas noches!")
+}
+if((today.getHours() >=4) && (today.getHours() <=5)){
+document.write("¡Buenas noches!")
+}
+// -->
+//]]>
+</script></span></span></center>
+</div>
+</body>
+
+</html>
